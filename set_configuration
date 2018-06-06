@@ -1,0 +1,2 @@
+#!/bin/bash
+psql --username=admin -c "ALTER SYSTEM TIMEZONE = 'UTC +2'"

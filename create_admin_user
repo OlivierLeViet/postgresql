@@ -1,0 +1,14 @@
+#!/bin/bash
+
+touch ~/.pgpass
+echo "*:*:*:admin:admin42" >> ~/.pgpass 
+chmod 0600 ~/.pgpass
+chown olivier:olivier ~/.pgpass
+
+sudo -u postgres psql -c "CREATE ROLE admin LOGIN PASSWORD 'admin42' SUPERUSER"
+sudo -u postgres psql -c "CREATE DATABASE admin OWNER = admin "
+sudo -u postgres psql -c "CREATE DATABASE shows OWNER = admin "
+sudo -u postgres psql -c "CREATE DATABASE ynov OWNER = admin "
+
+sudo service postgresql restart
+

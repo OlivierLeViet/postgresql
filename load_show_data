@@ -1,0 +1,7 @@
+#!/bin/bash
+
+psql --username=admin -f sql/load_table.sql
+
+
+#psql --username=admin -f sql/truncate.sql
+

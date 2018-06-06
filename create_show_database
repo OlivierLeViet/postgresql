@@ -1,0 +1,3 @@
+#!/bin/bash
+
+psql --username=admin -f sql/show_db.sql
