@@ -1,7 +1,7 @@
 #!/bin/bash
 
 touch ~/.pgpass
-echo "*:*:*:admin:admin42" >> ~/.pgpass 
+echo "*:*:*:admin:admin42" >> /mnt/c/.pgpass 
 chmod 0600 ~/.pgpass
 chown olivier:olivier ~/.pgpass
 
