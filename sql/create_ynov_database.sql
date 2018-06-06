@@ -1,5 +1,7 @@
+--va dans la DB ynov:
 \c ynov
 
+-- créé les talbes students classes et ntoes
 CREATE TABLE students ( student_id SERIAL PRIMARY KEY,
 nom TEXT,
 prenom TEXT );
@@ -13,6 +15,7 @@ note INT,
 coefficient INT,
 student_id INT REFERENCES students (student_id),
 class_id INT REFERENCES classes (class_id) );
+
 
 INSERT INTO students ( nom, prenom) VALUES ( 'Holloway', 'Max'), 
 ( 'Kim', 'Jong-Un');
