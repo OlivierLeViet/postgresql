@@ -1,6 +1,5 @@
 #!/bin/bash
 
-<<<<<<< HEAD
 --suppression du fichier pour éviter de réécrire la ligne à chaque fois.
 rm -f /etc/apt/sources.list.d/pgdg.list
 

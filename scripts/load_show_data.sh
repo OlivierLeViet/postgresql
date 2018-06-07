@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#sous le user admin lance truncate.sql qui permet de vider les tables
+#lancement du fichier truncate.sql qui permet de vider les tables
 psql --username=admin -f sql/truncate.sql
 
 #crypte les password des users

@@ -14,7 +14,7 @@ Projet PostgreSQL YnovB2 par Olivier TRAN & Gautier NICOLLET.
 
 -load_show_database --> peuplement de la BDD show avec les csv + cryptage des mots de passe avec pgcrypto.
 
--ynov
+-create_ynov_database --> création de la DB ynov, des tables, peuplement et création de la vue. Affichage de la moyenne des etudiants
 
 -backup_shows --> backup de la table shows et du serveur avec pg_dump et pg_dumpall.
 

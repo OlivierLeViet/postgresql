@@ -1,3 +1,4 @@
+--deletio net création de la DB et des tables
 DROP DATABASE ynov;
 CREATE DATABASE ynov;
 \c ynov
@@ -26,6 +27,7 @@ note NUMERIC(5, 3) NOT NULL,
 coefficient NUMERIC(3, 2) NOT NULL
 );
 
+--peuplement
 INSERT INTO students (firstname, lastname)
 VALUES ('Olivier', 'Tran');
 INSERT INTO students (firstname, lastname)
@@ -59,6 +61,7 @@ VALUES ((SELECT student_id FROM students WHERE firstname='Theo'),
         (SELECT class_id FROM classes WHERE class_name='postgreSQL'),
         16, 3);
 
+--Création de la vue avec le calcul de la moyenne generale
 CREATE VIEW average_students AS
         SELECT stds.student_id AS id,
         stds.firstname || ' ' || stds.lastname AS full_name,
