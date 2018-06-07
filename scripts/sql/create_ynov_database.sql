@@ -69,3 +69,4 @@ CREATE VIEW average_students AS
         FROM students stds
         JOIN notes n ON stds.student_id = n.student_id
         GROUP BY stds.student_id;
+SELECT * FROM average_students;
