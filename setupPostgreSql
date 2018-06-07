@@ -1,5 +1,6 @@
 #!/bin/bash
 
+<<<<<<< HEAD
 --suppression du fichier pour éviter de réécrire la ligne à chaque fois.
 rm -f /etc/apt/sources.list.d/pgdg.list
 
@@ -8,6 +9,13 @@ echo "deb http://apt.postgresql.org/pub/repos/apt/ stretch-pgdg main
 " | sudo tee --append /etc/apt/sources.list.d/pgdg.list
 
 --installation de PostgreSQL
+=======
+#rajoute une ligne nécessaire  dans le fichier pgdg.list à l'installion de postgresqm
+echo "deb http://apt.postgresql.org/pub/repos/apt/ stretch-pgdg main
+" | sudo tee --append /etc/apt/sources.list.d/pgdg.list
+
+#  download upate postgresql
+>>>>>>> e5fd9c07f6a6fc93e38d7963e406b395729722fd
 wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
 sudo apt-get -y update
 sudo apt-get -y install postgresql-10

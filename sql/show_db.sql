@@ -1,5 +1,7 @@
+-- vas dans la DB shows;
 \c shows
 
+-- crée les tables users episode show et les 3 tables de jointures;
 CREATE TABLE users ( user_id SERIAL PRIMARY KEY,
 registration_date TIMESTAMP CHECK (registration_date < NOW() ),
 firstname TEXT, lastname TEXT,
