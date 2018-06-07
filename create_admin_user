@@ -10,7 +10,6 @@ chown olivier:olivier ~/.pgpass
 sudo -u postgres psql -c "CREATE ROLE admin LOGIN PASSWORD 'admin42' SUPERUSER"
 #creation des databases avec admin pour propriétaire
 sudo -u postgres psql -c "CREATE DATABASE admin OWNER = admin "
-sudo -u postgres psql -c "CREATE DATABASE shows OWNER = admin "
 sudo -u postgres psql -c "CREATE DATABASE ynov OWNER = admin "
 
 #redémarre le service postresql

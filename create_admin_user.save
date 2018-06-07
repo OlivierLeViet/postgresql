@@ -1,6 +1,0 @@
-#!/bin/bash
-
-sudo service postgresql start
-udo -u postgres psql -c "CREATE ROLE admin LOGIN PASSWORD 'admin42' SUPERUSER"
-
-
