@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#backup de la table shows au format sql
+pg_dump --username=admin shows -f /mnt/c/postgresql/script/backup/backup_shows.sql
+
+#backup de la configuration et des données du serveur
+pg_dumpall --username=admin -f /mnt/c/postgresql/script/backup/all.sql
